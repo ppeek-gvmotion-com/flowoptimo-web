@@ -34,16 +34,12 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="rounded-xl bg-gray-100 shadow-2xl aspect-[4/3] flex items-center justify-center">
+            <div className="rounded-xl bg-gray-100 shadow-2xl aspect-[4/3] flex items-center justify-center overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/hero-dashboard.png"
                 alt="FlowOptimo Dashboard"
                 className="rounded-xl w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                  e.currentTarget.parentElement!.innerHTML =
-                    '<div class="flex items-center justify-center h-full text-gray-400"><span>Dashboard Preview</span></div>';
-                }}
               />
             </div>
           </div>
