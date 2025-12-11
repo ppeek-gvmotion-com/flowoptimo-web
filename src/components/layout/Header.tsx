@@ -11,29 +11,33 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-primary-600">
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-1">
-          <span className="text-xl font-normal text-white">FLOW</span>
-          <span className="text-xl font-bold text-white">OPTIMO</span>
+        <Link href="/" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-horizontal.svg"
+            alt="FlowOptimo"
+            className="h-8"
+          />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           <Link
             href="/features"
-            className="text-white/90 hover:text-white transition-colors"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Features
           </Link>
           <Link
             href="/pricing"
-            className="text-white/90 hover:text-white transition-colors"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Pricing
           </Link>
           <a
             href={`${APP_URL}/login`}
-            className="text-white/90 hover:text-white transition-colors"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Log in
           </a>
@@ -46,7 +50,7 @@ export function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-gray-600"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg
@@ -76,24 +80,24 @@ export function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-primary-600 border-t border-primary-500 px-4 py-4 space-y-4">
+        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-4">
           <Link
             href="/features"
-            className="block text-white/90 hover:text-white"
+            className="block text-gray-600 hover:text-gray-900"
             onClick={() => setMobileMenuOpen(false)}
           >
             Features
           </Link>
           <Link
             href="/pricing"
-            className="block text-white/90 hover:text-white"
+            className="block text-gray-600 hover:text-gray-900"
             onClick={() => setMobileMenuOpen(false)}
           >
             Pricing
           </Link>
           <a
             href={`${APP_URL}/login`}
-            className="block text-white/90 hover:text-white"
+            className="block text-gray-600 hover:text-gray-900"
           >
             Log in
           </a>

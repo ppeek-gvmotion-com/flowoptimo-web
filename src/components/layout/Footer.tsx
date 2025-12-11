@@ -6,10 +6,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <div className="flex items-center gap-1">
-              <span className="text-lg font-normal text-primary-600">FLOW</span>
-              <span className="text-lg font-bold text-primary-600">OPTIMO</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo-horizontal.svg"
+              alt="FlowOptimo"
+              className="h-8"
+            />
             <p className="mt-4 text-sm text-gray-600">
               Streamline your vacation rental operations with intelligent
               automation.
