@@ -4,7 +4,7 @@ const features = [
   {
     title: "Smart Dispatch",
     description:
-      "Automatically assign cleaners and tasks based on availability and location.",
+      "Automatically assign cleaners and maintenance staff based on availability and location.",
     icon: "dispatch",
   },
   {
@@ -16,8 +16,14 @@ const features = [
   {
     title: "WhatsApp Integration",
     description:
-      "Seamless communication with cleaners and guests directly from the platform.",
+      "Seamless communication with cleaners, maintenance staff, and guests directly from the platform.",
     icon: "whatsapp",
+  },
+  {
+    title: "Maintenance Management",
+    description:
+      "Track and manage property maintenance tasks, schedules, and staff assignments.",
+    icon: "maintenance",
   },
   {
     title: "Owner Portal",
@@ -61,12 +67,20 @@ function FeatureIcon({ icon }: { icon: string }) {
         d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
       />
     ),
+    maintenance: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L3 3l3 1.5h4.409"
+      />
+    ),
   };
 
   return (
-    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-600/10">
+    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-dark/10">
       <svg
-        className="h-6 w-6 text-primary-600"
+        className="h-6 w-6 text-primary-dark"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -90,7 +104,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {features.map((feature) => (
             <Card key={feature.title}>
               <FeatureIcon icon={feature.icon} />

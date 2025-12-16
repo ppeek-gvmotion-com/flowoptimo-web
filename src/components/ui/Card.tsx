@@ -14,7 +14,7 @@ export function Card({ className, children, highlight }: CardProps) {
         clsx(
           "rounded-xl border bg-white p-6 shadow-sm",
           highlight
-            ? "border-accent ring-2 ring-accent"
+            ? "border-primary-blue ring-2 ring-primary-blue"
             : "border-gray-200"
         ),
         className

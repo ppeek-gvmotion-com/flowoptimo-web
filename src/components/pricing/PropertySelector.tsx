@@ -41,7 +41,7 @@ export function PropertySelector({
             className={clsx(
               "rounded-full border px-4 py-2 text-sm font-medium transition-colors",
               value === preset
-                ? "border-primary-600 bg-primary-600 text-white"
+                ? "border-primary-blue bg-primary-blue text-white"
                 : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
             )}
           >
@@ -56,7 +56,7 @@ export function PropertySelector({
             max={max}
             value={value}
             onChange={handleInputChange}
-            className="w-20 rounded-lg border border-gray-300 px-3 py-2 text-center focus:border-primary-600 focus:outline-none focus:ring-1 focus:ring-primary-600"
+            className="w-20 rounded-lg border border-gray-300 px-3 py-2 text-center focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
           />
           <span className="text-sm text-gray-500">
             {min} - {max} properties

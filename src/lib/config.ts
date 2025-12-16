@@ -4,7 +4,7 @@ export const TIERS: Record<string, TierConfig> = {
   starter: {
     name: "starter",
     displayName: "Starter",
-    pricePerProperty: 3,
+    pricePerProperty: 25,
     minProperties: 5,
     maxProperties: 200,
     bundledAddons: [],
@@ -12,6 +12,7 @@ export const TIERS: Record<string, TierConfig> = {
       "Property management",
       "Booking calendar",
       "Cleaner scheduling",
+      "Maintenance management",
       "Task management",
       "Basic reports",
       "Email support",
@@ -20,13 +21,13 @@ export const TIERS: Record<string, TierConfig> = {
   professional: {
     name: "professional",
     displayName: "Professional",
-    pricePerProperty: 5,
+    pricePerProperty: 30,
     minProperties: 5,
     maxProperties: 200,
     bundledAddons: ["dispatch", "routes"],
     features: [
       "Everything in Starter",
-      "Smart Dispatch (auto-scheduling)",
+      "Smart Dispatch (cleaners & maintenance)",
       "WhatsApp integration",
       "Route optimization",
       "Real-time traffic",
@@ -38,7 +39,7 @@ export const TIERS: Record<string, TierConfig> = {
   enterprise: {
     name: "enterprise",
     displayName: "Enterprise",
-    pricePerProperty: 8,
+    pricePerProperty: 35,
     minProperties: 10,
     maxProperties: 500,
     bundledAddons: ["dispatch", "routes", "ses", "owner"],
@@ -58,7 +59,7 @@ export const ADDONS: Record<string, AddonConfig> = {
   dispatch: {
     name: "dispatch",
     displayName: "Smart Dispatch",
-    description: "Auto-schedule cleaners with WhatsApp notifications",
+    description: "Auto-schedule cleaners and maintenance staff with WhatsApp notifications",
     pricePerProperty: 1,
     requires: [],
     icon: "/images/features/dispatch.svg",
@@ -66,7 +67,7 @@ export const ADDONS: Record<string, AddonConfig> = {
   routes: {
     name: "routes",
     displayName: "Route Optimization",
-    description: "Optimize cleaner routes based on real-time traffic",
+    description: "Optimize cleaner and maintenance staff routes based on real-time traffic",
     pricePerProperty: 1.5,
     requires: ["dispatch"],
     icon: "/images/features/routes.svg",

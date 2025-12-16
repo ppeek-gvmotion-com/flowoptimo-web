@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "FlowOptimo - Vacation Rental Operations Software",
   description:
     "Streamline cleaner scheduling, route optimization, and guest communication for vacation rentals.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

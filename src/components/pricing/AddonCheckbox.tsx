@@ -29,7 +29,7 @@ export function AddonCheckbox({
         isBundled
           ? "cursor-not-allowed border-gray-200 bg-gray-50"
           : isSelected
-            ? "border-accent bg-accent/5"
+            ? "border-accent-green bg-accent-green/5"
             : "border-gray-200 hover:border-gray-300"
       )}
     >
@@ -38,14 +38,14 @@ export function AddonCheckbox({
         checked={isSelected || isBundled}
         disabled={isBundled}
         onChange={(e) => onChange(e.target.checked)}
-        className="mt-1 h-4 w-4 rounded border-gray-300 text-accent focus:ring-accent"
+        className="mt-1 h-4 w-4 rounded border-gray-300 text-accent-green focus:ring-accent-green"
       />
 
       <div className="flex-1">
         <div className="flex items-center gap-2">
           <span className="font-medium text-gray-900">{addon.displayName}</span>
           {isBundled && (
-            <span className="rounded bg-accent/10 px-2 py-0.5 text-xs font-medium text-accent-dark">
+            <span className="rounded bg-accent-green/10 px-2 py-0.5 text-xs font-medium text-accent-dark">
               Included
             </span>
           )}

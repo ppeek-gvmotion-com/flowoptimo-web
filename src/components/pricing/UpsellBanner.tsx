@@ -17,7 +17,7 @@ export function UpsellBanner({ state, onTierChange }: UpsellBannerProps) {
   const targetTier = TIERS[upsell.targetTier];
 
   return (
-    <div className="rounded-lg border border-accent bg-accent/10 p-4">
+    <div className="rounded-lg border border-accent-green bg-accent-green/10 p-4">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <p className="font-medium text-accent-dark">
@@ -30,7 +30,7 @@ export function UpsellBanner({ state, onTierChange }: UpsellBannerProps) {
         </div>
         <button
           onClick={() => onTierChange(upsell.targetTier)}
-          className="shrink-0 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent-dark transition-colors"
+          className="shrink-0 rounded-lg border-2 border-accent-green bg-white px-4 py-2 text-sm font-medium text-accent-green hover:bg-accent-green hover:text-white transition-colors"
         >
           Switch to {targetTier.displayName}
         </button>

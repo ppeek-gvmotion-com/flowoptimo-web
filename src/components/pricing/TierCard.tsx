@@ -35,7 +35,7 @@ export function TierCard({
   return (
     <Card highlight={isSelected || tier.popular} className="relative flex flex-col">
       {tier.popular && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary-600 px-3 py-1 text-xs font-semibold text-white uppercase">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary-dark px-3 py-1 text-xs font-semibold text-white uppercase">
           Popular
         </div>
       )}
@@ -59,7 +59,7 @@ export function TierCard({
         {tier.features.map((feature) => (
           <li key={feature} className="flex items-start gap-2">
             <svg
-              className="mt-0.5 h-5 w-5 shrink-0 text-accent"
+              className="mt-0.5 h-5 w-5 shrink-0 text-accent-green"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
