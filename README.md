@@ -1,6 +1,6 @@
 # FlowOptimo Web
 
-Marketing and pricing website for FlowOptimo - Vacation Rental Operations Software.
+Marketing and pricing website for FlowOptimo - Vacation Rental Homes Operations Software.
 
 ## Tech Stack
 
