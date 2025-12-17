@@ -1,6 +1,6 @@
 # FlowOptimo Web
 
-Marketing and pricing website for FlowOptimo - Vacation Rental Operations Software for Costa del Sol
+Marketing and pricing website for FlowOptimo - Vacation Home Rental Operations Software for Costa del Sol
 
 ## Tech Stack
 
